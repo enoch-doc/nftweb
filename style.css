@@ -105,7 +105,8 @@ transition: all 0.3s ease;
     }
     
     #navbar-logo{
-        padding-left: 25px;
+        padding-left: 15px;
+        font-size: 27px;
     }
     
     .navbar-menu{
@@ -422,8 +423,8 @@ transition: all 0.3s ease;
 }
 
 .images-card:hover{
-    transform: scale(1.05);
-    transition: 0.1s ease-in;
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 
@@ -432,6 +433,7 @@ transition: all 0.3s ease;
         font-size: 2rem;
         margin-top: 12rem;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -439,10 +441,38 @@ transition: all 0.3s ease;
         font-size: 1.2rem;
     }
 
-    .images-card{
+    #navbar-logo{
+        font-size: 20px;
+    }
+
+    .images-card, .images-card:nth-child(2), .images-card:nth-child(3), .images-card:nth-child(4), .images-card:nth-child(5), .images-card:nth-child(6){
+        position: relative;
+        margin: -40px;
         width: 300px;
     }
+
+    .images-card h2{
+        position: absolute;
+        top: 240px;
+        left: 30px;
+        font-size: 1rem;
+    }
+    
+    .images-card p{
+        position: absolute;
+        top: 270px;
+        left: 30px;
+        font-size: 0.8rem;
+    }
+
+    #nft1{
+        height: 325px;
+        width: 300px;
+        border-radius: 20px;
+        margin: -2.5rem;
+    }
 }
+
 
 .footer-container{
     background-color: #141414;
